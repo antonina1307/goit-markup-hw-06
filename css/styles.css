@@ -690,8 +690,7 @@ border-bottom: 1px solid #ECECEC;
     padding: 40px;
 }
 .main-close-btn {
-  position: absolute;
-  content: '';
+  position: absolute; 
   border-radius: 50%;
   border: 1px solid #757575;
   background-color: transparent;
@@ -701,9 +700,16 @@ border-bottom: 1px solid #ECECEC;
   top: 8px;
   padding: 6px;
 }
+
 .close-btn {
   width: 18px;
   height: 18px;
+}
+.close-btn:focus,
+.close-btn:hover {
+  background-color: transparent;
+  fill: var(--accent-color);
+
 }
 .form{
   width: 448px;
@@ -724,29 +730,50 @@ border-bottom: 1px solid #ECECEC;
 }
 .form-field{
   display: flex;
+  position: relative;
   flex-direction: column;
   margin-bottom: 10px;
 }
-.modal-input{
+.form-input{
   width: 100%;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-    margin-bottom: 10px;
-    padding-left: 40px;
-    color: #757575;
-} 
+  border-radius: 4px;    
+  padding-left: 40px;
+  color: #757575;
+}
+.icon-form-input {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  bottom: 14px;
+  left: 15px;
+}
+.icon-form-input:hover,
+.icon-form-input:focus {
+  fill: var(--accent-color);
+}
+
 textarea{
   resize: none;
-  border: none;
+  
 }
-.form-comment{ 
+.comment{ 
   
   margin-top: 10px;
-    width: 448px;
-    height: 120px;  
+    width: 100%;    
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 16px;
+    padding-right: 10px;
+}
+
+.form-policy{
+  margin-top: 20px;
+  margin-bottom: 30px;
+  
 }
 .btn-submit{ 
   width: 200px;

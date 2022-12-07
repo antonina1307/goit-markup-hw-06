@@ -343,24 +343,34 @@
   <p class="modal-heading">Залиште свої дані, ми вам передзвонимо</p>
   <form class="form">
     <div class="form-field">
-    <label for="name">Ім'я</label>
-    <input type="text"  name="name" id="name" class="modal-input">
+    <label for="name" class="form-label">Ім'я</label>
+    <input type="text"  name="name" id="name" class="form-input">
+    <svg class="icon-form-input">
+      <use href="./images/symbol-defs.svg#icon-person"></use>
+    </svg>
     </div>
     <div class="form-field">
-    <label for="tel">Телефон</label>
-    <input type="text"  id="tel" class="modal-input">
+    <label for="tel" class="form-label">Телефон</label>
+    <input type="text"  id="tel" class="form-input">
+    <svg class="icon-form-input">
+      <use href="./images/symbol-defs.svg#icon-modal-tel"></use>
+    </svg>
     </div>
     <div class="form-field">
-    <label for="mail">Пошта</label>
-    <input type="text" class="modal-input">
+    <label for="mail" class="form-label">Пошта</label>
+    <input type="text" class="form-input">
+    <svg class="icon-form-input">
+      <use href="./images/symbol-defs.svg#icon-modal-email"></use>
+    </svg>
     </div>
-    <label for="comment">Коментар</label>
-    <div class="form-comment">    
-    <textarea name="comment" id="comment" placeholder="Введіть текст"></textarea>
+    
+    <div class="form-field"> 
+      <label for="comment">Коментар</label>
+    <textarea name="comment" id="comment" rows="8" placeholder="Введіть текст"></textarea>
     </div>
     <div>
-    <input type="checkbox" name="" id="policy">
-<label for="policy">Погоджуюся з розсилкою та приймаю </label>
+    <input class="form-policy" type="checkbox" name="" id="policy">
+    <label for="policy">Погоджуюся з розсилкою та приймаю Умови договору </label>
     </div>
     <button  class="btn-submit" type="submit">
       Відправити
