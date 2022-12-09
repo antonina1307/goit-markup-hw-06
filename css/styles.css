@@ -732,7 +732,7 @@ border-bottom: 1px solid #ECECEC;
    margin-bottom: 12px;
 }
 .form-field{
-  position: relative;
+ 
   display: flex;
   position: relative;
   flex-direction: column;
@@ -833,18 +833,58 @@ textarea{
     line-height: 1.87;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
+.form-subscribe-footer{ 
+  display: flex;  
+  align-items: flex-end;
+}
+.form-label-footer{
+  box-sizing: border-box;   
+    width: 340px;
+    height: 50px;
+    left: 816px;
+    top: 2784px;
+  
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+}
+.label-text-footer{
+font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+}
+.form-input-footer{
+  width: 340px;
+    height: 50px;
+    left: 820px;
+    top: 2792px;
+  
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+}
 .form-button-footer{
+
   width: 190px;
+  height: 50px;
   font-weight: 700;
     font-size: 16px;
     line-height: 1.9;  
     display: flex;
-    align-items: center;
-    text-align: center;
+    align-items: flex-end;
+    
     letter-spacing: 0.06em;
+    border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px; 
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     color: #FFFFFF;
     background-color: var(--accent-color);
+}
+.icon-button-footer{
+ fill: #FFFFFF;
 }
 
