@@ -689,10 +689,7 @@ border-bottom: 1px solid #ECECEC;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition :  transform 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
-  padding-top: 38px;
-  padding-left: 38px;
-  padding-bottom: 32px;
-  padding-right: 43px;
+  padding: 40px;
 }
 .main-close-btn {
   position: absolute; 
@@ -737,9 +734,17 @@ margin-bottom: 12px;
   position: relative;
   flex-direction: column;
   margin-bottom: 10px;
+  
 }
 .form-label{
   margin-bottom: 4px;
+  font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;  
+    letter-spacing: 0.01em;  
+    color: #757575;
 }
 .form-input{
 display: block;
@@ -776,11 +781,15 @@ textarea{
   resize: none;
   border-radius: 4px; 
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding-left:16px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  fill: #757575;
 }
 .comment{  
   margin-top: 10px;
   width: 100%;    
-  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-color: 1px solid rgba(33, 33, 33, 0.2);
+  
   border-radius: 4px;
   padding-top: 12px;
   padding-bottom: 12px;
@@ -876,32 +885,43 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   margin-right: 12px;
 }
 .form-label-footer{ 
-  display: block; 
-  margin-bottom: 20px;
-  font-weight: 700;
+    display: block; 
+    margin-bottom: 20px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
-    text-transform: uppercase;
-  
+    text-transform: uppercase;  
     color: #FFFFFF;
 }
-
 .form-input-footer{
     width: 340px;
     height: 50px;   
     background-color: inherit;
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.3);    
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     margin-right: 12px;
     padding-left: 16px;
 }
+.form-input-footer::placeholder{
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+}
 
 .form-button-footer{
-  width: 190px;
-  height: 50px;
-  font-weight: 700;
+    width: 190px;
+    height: 50px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
     font-size: 16px;
     line-height: 1.9;  
     display: flex;
@@ -918,12 +938,12 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .form-button-footer:hover,
 .form-button-footer:focus{
   background-color: #188CE8;
-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-button-footer{
- fill: #FFFFFF;
- margin-left: 10px;
+   fill: #FFFFFF;
+   margin-left: 10px;
 
 }
 
